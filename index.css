@@ -1,0 +1,38 @@
+*{
+    background-color: whitesmoke;
+}
+
+#main{
+    height: 50%;
+    width: 80%;
+    background-color: yellow;
+}
+
+#user_choice{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+}
+
+#computer_choice{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: green;
+}
+
+#choices{
+    width: 40%;
+    height: 30%;
+    background-color: yellow;
+}
+
+.choice{
+    float: left;
+    width: 24%;
+    height: 50%;
+    margin: 27px;
+    margin-top: 50px;
+
+}

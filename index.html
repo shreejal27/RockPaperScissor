@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Scissor, Paper, Rock</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <center>
@@ -9,14 +10,24 @@
       <p id="result_Text">Hello WOrld</p>
 
       <div id="main">
-        <div id="user_choice" float: left>user</div>
-        <div id="computer_choice">computer</div>
+        <div id="user_choice">
+          <div id="win_counter">
+            <span>You:</span>
+          </div>
+          user
+        </div>
+        <div id="computer_choice">
+          <div id="win_counter">
+            <span>Computer</span>
+          </div>
+          computer
+        </div>
       </div>
       <p>Choose One !</p>
       <div id="choices">
-        <div id="rock">rock</div>
-        <div id="paper">paper</div>
-        <div id="scissor">scissor</div>
+        <div class="choice" id="rock">rock</div>
+        <div class="choice" id="paper">paper</div>
+        <div class="choice" id="scissor">scissor</div>
       </div>
     </center>
   </body>
