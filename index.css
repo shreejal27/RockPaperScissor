@@ -16,7 +16,7 @@ body {
 
 .win_counter{
     float: left;
-    width: 50%;
+    width: 33%;
 }
 
 #user_box{
@@ -72,7 +72,19 @@ p{
     margin-bottom: 30px;
 }
 
-#userWins, #computerWins{
+#userWins{
+    font-size: 22px;
+    margin-bottom: 25px;
+    margin-left: 190px;
+}
+
+#computerWins{
+    font-size: 22px;
+    margin-bottom: 25px;
+    margin-right: 170px;
+}
+
+#draw{
     font-size: 22px;
     margin-bottom: 25px;
 }

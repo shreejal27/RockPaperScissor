@@ -1,15 +1,22 @@
 var u=0;
 var c=0;
+var userWinCounter = 0;
+var computerWinCounter = 0;
+var draw = 0;
+
+var userBox= document.getElementById("user_box");
+var computerbox= document.getElementById("computer_box");
+
 
 function startGame(value){
     var user_choice= value;
     user(user_choice);
     cvalue();
     gameLogic(u,c);
+    updateWinCounter(userWinCounter,computerWinCounter,draw);
 }
 
 function user(user_choice){
-    var userBox= document.getElementById("user_box");
     if(user_choice == "1"){
         userBox.innerHTML = "<img src='icons/rock-modified.png'  width='200px' height='200px'>";
         u=1;
@@ -30,7 +37,6 @@ function cvalue(){
 }
 
 function computer(computer_choice){
-    var computerbox= document.getElementById("computer_box");
 
     if(computer_choice == 1){
         computerbox.innerHTML = "<img src='icons/rock-modified.png'  width='200px' height='200px'>";
@@ -55,35 +61,52 @@ function gameLogic(u,c){
 
     if(u==1 && c==1){
         resultText.innerHTML= msg3;
+        draw++;
     }
     else if(u==1 && c==2){
         resultText.innerHTML= msg2;
+        computerWinCounter++;
     }
     else if(u==1 && c==3){
         resultText.innerHTML= msg1;
+        userWinCounter++;
     }
     else if(u==2 && c==1){
-        resultText.innerHTML= msg1;      
+        resultText.innerHTML= msg1; 
+        userWinCounter++;     
     }
     else if(u==2 && c==2){
         resultText.innerHTML= msg3;
+        draw++;
     }
     else if(u==2 && c==3){
-        resultText.innerHTML= msg2;     
+        resultText.innerHTML= msg2; 
+        computerWinCounter++;    
     }
     else if(u==3 && c==1){
         resultText.innerHTML= msg2;
+        computerWinCounter++;
    
     }
     else if(u==3 && c==2){
         resultText.innerHTML= msg1;
-        
+        userWinCounter++;
     }
     else if(u==3 && c==3){
         resultText.innerHTML= msg3;
+        draw++;
       
     }
     else{
         resultText.innerHTML= msg4;
     }
+}
+
+function updateWinCounter(userWinCounter, computerWinCounter, draw){
+    var totalUserWin= document.getElementById("userWins");
+    var totalComputerWin= document.getElementById("computerWins");
+    var drawCount= document.getElementById("draw");
+    totalUserWin.innerHTML= "You: &ensp;" + userWinCounter;
+    totalComputerWin.innerHTML= "Computer: &ensp;" + computerWinCounter;
+    drawCount.innerHTML= "Draw: &ensp;" + draw;
 }
