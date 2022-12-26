@@ -55,7 +55,7 @@ function computer(computer_choice){
 function gameLogic(u,c){
     const msg1= "User Wins !";
     const msg2= "Computer Wins !"; 
-    const msg3= "Draw!!!";
+    const msg3= "Draw !!!";
     const msg4= "!!!!! Game Crashed !!!!!";
     var resultText = document.getElementById("resultText");
 
