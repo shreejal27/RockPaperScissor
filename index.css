@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
     background: url("icons/background.png") no-repeat center center fixed;
     background-size: cover;
@@ -62,4 +66,17 @@ img{
 
 p{
     color: white;
+}
+#resultText{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+#userWins, #computerWins{
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+#chooseOne{
+    font-size: 25px;
 }
