@@ -8,14 +8,19 @@
     background-color: yellow;
 }
 
-#user_choice{
+.win_counter{
+    float: left;
+    width: 50%;
+}
+
+#user_box{
     float: left;
     width: 50%;
     height: 100%;
     background-color: blue;
 }
 
-#computer_choice{
+#computer_box{
     float: left;
     width: 50%;
     height: 100%;
@@ -35,8 +40,15 @@
     margin: 30px;
 }
 
-img{
+.icon{
     height: 150px;
     width: 150px;
-    border-radius: 70px;
+    border-radius: 75px;
 }
+
+.icon:hover{
+    cursor: pointer;
+    scale: 1.1;
+    transition: 1s ease-in;
+}
+

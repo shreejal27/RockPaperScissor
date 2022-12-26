@@ -1,38 +1,53 @@
 <html>
   <head>
-    <title>Scissor, Paper, Rock</title>
+    <title>Rock, Paper, Scissor</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <center>
-      <h2>Scissor Paper Rock</h2>
+      <h2>Rock Paper Scissor</h2>
 
       <p id="result_Text">Hello WOrld</p>
 
       <div id="main">
-        <div id="user_choice">
-          <div id="win_counter">
-            <span>You:</span>
-          </div>
-          user
+        <div class="win_counter">
+          <span>You:</span>
         </div>
-        <div id="computer_choice">
-          <div id="win_counter">
-            <span>Computer</span>
-          </div>
-          computer
+        <div class="win_counter">
+          <span>Computer</span>
         </div>
+        <div id="user_box">user</div>
+        <div id="computer_box">computer</div>
       </div>
+      <br />
       <p>Choose One !</p>
       <div id="choices">
         <div class="choice" id="rock">
-          <img src="icons/rock-modified.png" alt="rock" />
+          <img
+            src="icons/rock-modified.png"
+            alt="rock"
+            onclick="Uvalue('1')"
+            value="1"
+            class="icon"
+          />
         </div>
         <div class="choice" id="paper">
-          <img src="icons/paper-modified.png" alt="paper" />
+          <img
+            src="icons/paper-modified.png"
+            alt="paper"
+            onclick="Uvalue('2')"
+            value="2"
+            class="icon"
+          />
         </div>
         <div class="choice" id="scissor">
-          <img src="icons/scissor-modified.png" alt="scissor" />
+          <img
+            src="icons/scissor-modified.png"
+            alt="scissor"
+            onclick="Uvalue('3')"
+            value="3"
+            class="icon"
+          />
         </div>
       </div>
     </center>
