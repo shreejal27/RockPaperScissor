@@ -2,31 +2,39 @@
   <head>
     <title>Rock, Paper, Scissor</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="title.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <center>
-      <h2>Rock Paper Scissor</h2>
+      <h1>Rock &emsp; Paper &emsp; Scissor</h1>
 
-      <p id="result_Text">Hello WOrld</p>
+      <p id="resultText"></p>
 
       <div id="main">
         <div class="win_counter">
-          <span>You:</span>
+          <p>You: 0</p>
         </div>
         <div class="win_counter">
-          <span>Computer</span>
+          <p>Computer: 0</p>
         </div>
         <div id="user_box">user</div>
         <div id="computer_box">computer</div>
       </div>
       <br />
+
       <p>Choose One !</p>
       <div id="choices">
         <div class="choice" id="rock">
           <img
             src="icons/rock-modified.png"
             alt="rock"
-            onclick="Uvalue('1')"
+            onclick="startGame('1')"
             value="1"
             class="icon"
           />
@@ -35,7 +43,7 @@
           <img
             src="icons/paper-modified.png"
             alt="paper"
-            onclick="Uvalue('2')"
+            onclick="startGame('2')"
             value="2"
             class="icon"
           />
@@ -44,13 +52,14 @@
           <img
             src="icons/scissor-modified.png"
             alt="scissor"
-            onclick="Uvalue('3')"
+            onclick="startGame('3')"
             value="3"
             class="icon"
           />
         </div>
       </div>
     </center>
+    <script type="text/javascript" src="title.js"></script>
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
