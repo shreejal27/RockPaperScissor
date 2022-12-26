@@ -23,16 +23,20 @@
 }
 
 #choices{
-    width: 40%;
+    width: 50%;
     height: 30%;
-    background-color: yellow;
+
 }
 
 .choice{
     float: left;
-    width: 24%;
+    width: 25%;
     height: 50%;
-    margin: 27px;
-    margin-top: 50px;
+    margin: 30px;
+}
 
+img{
+    height: 150px;
+    width: 150px;
+    border-radius: 70px;
 }
