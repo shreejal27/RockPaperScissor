@@ -2,6 +2,7 @@ function Uvalue(value){
     var user_choice= value;
     user(user_choice);
     Cvalue();
+
 }
 
 function user(user_choice){
@@ -19,7 +20,6 @@ function user(user_choice){
 
 function Cvalue(){
     var computer_choice = Math.floor(Math.random()*3)+1;
-    console.log(computer_choice);
     computer(computer_choice);
 }
 
@@ -37,3 +37,6 @@ function computer(computer_choice){
     }
 }
        
+function result(){
+    
+}

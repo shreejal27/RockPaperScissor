@@ -1,11 +1,16 @@
 *{
-    background-color: whitesmoke;
+    color: white;
 }
-
+body {
+    background: url("icons/background.png") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+  }
 #main{
     height: 50%;
     width: 80%;
-    background-color: yellow;
+   
 }
 
 .win_counter{
@@ -17,14 +22,14 @@
     float: left;
     width: 50%;
     height: 100%;
-    background-color: blue;
+   
 }
 
 #computer_box{
     float: left;
     width: 50%;
     height: 100%;
-    background-color: green;
+   
 }
 
 #choices{
